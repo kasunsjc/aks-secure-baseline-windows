@@ -2,7 +2,7 @@
 
 This reference implementation demonstrates the _recommended starting (baseline) infrastructure architecture_ for an [AKS cluster](https://azure.microsoft.com/services/kubernetes-service). This is implementation and document is meant to guide an interdisciplinary team or multiple distinct teams like networking, security and development through the process of getting this secure baseline infrastructure deployed and understanding the components of it.
 
-It is also recommended to go thru the [Windows Introduction to Kubernetes.](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/) This documentation will provide a quick summary of Windows support on Kubernetes and the feature parities. :wq!
+It is also recommended to go thru the [Windows Introduction to Kubernetes.](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/) This documentation will provide a quick summary of Windows support on Kubernetes and the feature parities. 
 
 ## Azure Architecture Center guidance
 
@@ -27,7 +27,7 @@ Finally, this implementation uses the [ASP.NET Core Docker sample web app](https
   * [AKS-managed Azure AD](https://docs.microsoft.com/azure/aks/managed-aad)
   * Managed Identities
   * Azure CNI
-  * [Azure Monitor for containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
+  * [Azure Monitor for containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) - limitation on historical pod/node metrics data. 
 * Azure Virtual Networks (hub-spoke)
 * Azure Application Gateway (WAF)
 * AKS-managed Internal Load Balancers
@@ -37,9 +37,9 @@ Finally, this implementation uses the [ASP.NET Core Docker sample web app](https
 
 * [Flux GitOps Operator](https://fluxcd.io)
 * [Traefik Ingress Controller](https://docs.microsoft.com/azure/dev-spaces/how-to/ingress-https-traefik)
-* [Azure AD Pod Identity](https://github.com/Azure/aad-pod-identity)
+* [Azure AD Pod Identity](https://github.com/Azure/aad-pod-identity) - coming soon 
 * [Azure KeyVault Secret Store CSI Provider](https://github.com/Azure/secrets-store-csi-driver-provider-azure)
-* ~~ [Kured](https://docs.microsoft.com/azure/aks/node-updates-kured)~~
+* ~~[Kured](https://docs.microsoft.com/azure/aks/node-updates-kured)~~
 
 
 ![Network diagram depicting a hub-spoke network with two peered VNets, each with three subnets and main Azure resources.](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks/images/secure-baseline-architecture.svg)
