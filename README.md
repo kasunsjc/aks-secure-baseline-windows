@@ -1,9 +1,8 @@
-# Azure Kubernetes Service (AKS) Secure Windows Baseline Reference Implementation
+# Azure Kubernetes Service (AKS) Windows Secure Baseline Reference Implementation
 
 This reference implementation demonstrates the _recommended starting (baseline) infrastructure architecture_ for an [AKS cluster](https://azure.microsoft.com/services/kubernetes-service). This is implementation and document is meant to guide an interdisciplinary team or multiple distinct teams like networking, security and development through the process of getting this secure baseline infrastructure deployed and understanding the components of it.
 
-It is also recommended to go thru the [Windows Introduction to Kubernetes.](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/)
-
+It is also recommended to go thru the [Windows Introduction to Kubernetes.](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/) This documentation will provide a quick summary of Windows support on Kubernetes and the feature parities. :wq!
 
 ## Azure Architecture Center guidance
 
@@ -40,7 +39,8 @@ Finally, this implementation uses the [ASP.NET Core Docker sample web app](https
 * [Traefik Ingress Controller](https://docs.microsoft.com/azure/dev-spaces/how-to/ingress-https-traefik)
 * [Azure AD Pod Identity](https://github.com/Azure/aad-pod-identity)
 * [Azure KeyVault Secret Store CSI Provider](https://github.com/Azure/secrets-store-csi-driver-provider-azure)
-* [Kured](https://docs.microsoft.com/azure/aks/node-updates-kured)
+~~* [Kured](https://docs.microsoft.com/azure/aks/node-updates-kured)~~
+
 
 ![Network diagram depicting a hub-spoke network with two peered VNets, each with three subnets and main Azure resources.](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks/images/secure-baseline-architecture.svg)
 
