@@ -2,11 +2,11 @@
 
 This reference implementation demonstrates the _recommended starting (baseline) infrastructure architecture_ for an [AKS cluster](https://azure.microsoft.com/services/kubernetes-service). This is implementation and document is meant to guide an interdisciplinary team or multiple distinct teams like networking, security and development through the process of getting this secure baseline infrastructure deployed and understanding the components of it.
 
-It is also recommended to go thru the [Windows Introduction to Kubernetes.](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/) This documentation will provide a quick summary of Windows support on Kubernetes and the feature parities. 
-
 ## Azure Architecture Center guidance
 
 This project has a companion set of articles that describe challenges, design patterns, and best practices for a secure AKS cluster. You can find this article on the Azure Architecture Center at [Baseline architecture for a secure AKS cluster](https://aka.ms/architecture/aks-baseline). If you haven't reviewed it, we suggest you read it as it will give added context to the considerations applied in this implementation. Ultimately, this is the direct implementation of that specific architectural guidance.
+
+It is also recommended to go thru the [Windows Introduction to Kubernetes.](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/) This documentation will provide a quick summary of Windows support on Kubernetes and the feature parities. 
 
 ## Architecture
 
