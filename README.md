@@ -8,11 +8,13 @@ This project has a companion set of articles that describe challenges, design pa
 
 It is also recommended to go thru the [Windows Introduction to Kubernetes.](https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/) This documentation will provide a quick summary of Windows support on Kubernetes and the feature parities. 
 
+
 ## Architecture
 
-Azure Kubernetes Service (AKS) is a managed Kubernetes service that that lets you quickly deploy and manage clusters. It supports both Linux and Windows Server node pools so you can deploy Linux and Windows application on a single AKS cluster. In this project, you will be creating components in either Linux or Windows. 
+Azure Kubernetes Service (AKS) is a managed Kubernetes service that that lets you quickly deploy and manage clusters. It supports both Linux and Windows Server node pools so you can deploy Linux and Windows application on a single AKS cluster. 
 
 **This architecture is infrastructure focused**, more so than workload. It concentrates on the AKS cluster itself, including concerns with identity, post-deployment configuration, secret management, and network topologies.
+In this project, you will be creating components in either Linux or Windows.
 
 The implementation presented here is the _minimum recommended baseline for most AKS clusters_. This implementation integrates with Azure services that will deliver observability, provide a network topology that will support multi-regional growth, and keep the in-cluster traffic secure as well. This architecture should be considered your starting point for pre-production and production stages.
 
