@@ -10,6 +10,8 @@ It is also recommended to go thru the [Windows Introduction to Kubernetes.](http
 
 ## Architecture
 
+Azure Kubernetes Service (AKS) is a managed Kubernetes service that that lets you quickly deploy and manage clusters. It supports both Linux and Windows Server node pools so you can deploy Linux and Windows application on a single AKS cluster. In this project, you will be creating components in either Linux or Windows. 
+
 **This architecture is infrastructure focused**, more so than workload. It concentrates on the AKS cluster itself, including concerns with identity, post-deployment configuration, secret management, and network topologies.
 
 The implementation presented here is the _minimum recommended baseline for most AKS clusters_. This implementation integrates with Azure services that will deliver observability, provide a network topology that will support multi-regional growth, and keep the in-cluster traffic secure as well. This architecture should be considered your starting point for pre-production and production stages.
@@ -26,7 +28,7 @@ Finally, this implementation uses the [ASP.NET Core Docker sample web app](https
   * System and User [node pool separation](https://docs.microsoft.com/azure/aks/use-system-pools)
   * [AKS-managed Azure AD](https://docs.microsoft.com/azure/aks/managed-aad)
   * Managed Identities
-  * Azure CNI
+  * [Azure CNI](https://docs.microsoft.com/en-us/azure/aks/concepts-network#azure-cni-advanced-networking)
   * [Azure Monitor for containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) - limitation on historical pod/node metrics data. 
 * Azure Virtual Networks (hub-spoke)
 * Azure Application Gateway (WAF)
